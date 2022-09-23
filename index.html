@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+        .block::before{
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0; /* вплотную прилегает к верхней границе  */
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="block"></div>
+</body>
+</html>
